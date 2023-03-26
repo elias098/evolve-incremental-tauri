@@ -1,0 +1,56 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "evolve-incremental",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "confirm": true,
+        "message": true
+      },
+      "window": {
+        "close": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "elias.evolve.incremental",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null,
+      "dangerousExternalCommandAccess": [
+        {
+          "url": "https://pmotschmann.github.io/Evolve/",
+          "windows": [
+            "evolve-incremental"
+          ]
+        }
+      ]
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": []
+  }
+}
